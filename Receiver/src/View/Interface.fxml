@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InterfaceController">
+	<children>
+		<TextArea fx:id="textMessage" editable="false" layoutX="96.0" layoutY="73.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="114.0" prefWidth="466.0" />
+		<TextArea fx:id="textLog" editable="false" layoutX="96.0" layoutY="207.0" opacity="0.4" prefHeight="114.0" prefWidth="466.0">
+         <font>
+            <Font size="11.0" />
+         </font></TextArea>
+		<Text layoutX="29.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" />
+		<Text layoutX="29.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log" />
+		<Text fill="#09e33d" layoutX="194.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RECEIVER" textAlignment="CENTER">
+			<font>
+				<Font name="HVD Bodedo Medium" size="32.0" />
+			</font>
+		</Text>
+		<Button fx:id="BtnStart" layoutX="485.0" layoutY="335.0" mnemonicParsing="false" onAction="#BtnStartOnAction" prefHeight="37.0" prefWidth="77.0" text="START">
+         <font>
+            <Font name="HVD Bodedo Medium" size="13.0" />
+         </font></Button>
+		<TextField fx:id="textPort" layoutX="96.0" layoutY="340.0" />
+		<Text layoutX="27.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port" />
+	</children>
+</AnchorPane>
